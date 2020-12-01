@@ -1,0 +1,33 @@
+#Introduction{
+	height: 500px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+#Mission{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#Selling{
+	margin-top: 50px;
+	padding-bottom: 50px;
+}
+
+#Buying{
+	margin-top: 50px;
+	padding-bottom: 50px;
+}
+
+#Footer{
+	background-color: #407BFF;
+	height: 200px;
+}
+
+#Footer h5{
+	color: white;
+}
+#Footer p{
+	font-size: 12.5px;
+	color: white;
+}
