@@ -2,57 +2,112 @@
 
 <html lang="en">
 	<head>
-
 		<meta charset="utf-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link href='style.css' rel='stylesheet'>
 
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+		<title>WeBike</title>
+		<link rel="icon" type="image/svg+xml" href="images/logo-1.png">
 	</head>
 
 	<body>
 
-		<div class="container" id="mainContainer">
+		<div class="container-fluid" id="mainContainer">
 
 <!--Navbar-->
-			<nav class="navbar navbar-expand-sm navbar-light justify-content-between row border-bottom border-dark" id="Navbar">
-				<img class="navlogo" src="images/logo.jpg" height="50" alt="Logo">
-				<ul class="navbar-nav">
+
+			<nav class="navbar navbar-expand-sm navbar-light bg-white" id="Navbar">
+  				<a class="navbar-brand" href="#Introduction">
+    				<img src="images/logo-2.png" height="35" alt="WeBike Logo">
+  				</a>
+
+				<ul class="navbar-nav ml-auto">
 					<li class="nav-item active">
-						<a class="nav-link" href="#">Our Mission</a>
+						<a class="nav-link" href="#Mission">Our Mission</a>
 					</li>
-					<li class="nav-item ml-2">
-						<a class="nav-link" href="#">Sell Now</a>
+					<li class="nav-item ml-3">
+						<a class="nav-link" href="#Selling">Sell Now</a>
 					</li>
-					<li class="nav-item ml-2">
-						<a class="nav-link" href="#">Buy Now</a>
+					<li class="nav-item ml-3">
+						<a class="nav-link" href="#Buying">Buy Now</a>
 					</li>
-					<li class="nav-item ml-2">
-						<a class="nav-link text-primary" href="#">Login</a>
+					<li class="nav-item ml-3">
+						<a class="nav-link" href="#Team">Our Team</a>
 					</li>
-					<button class="btn btn-outline-primary ml-2" type="button">Sign Up</button>
+					<li class="nav-item ml-3">
+						<a class="nav-link" href="#" id="Login">Login</a>
+					</li>
+					<a class="btn ml-3" type="button" data-toggle="modal" data-target="#modalLoginForm" id="SignUp">Sign Up</a>
 				</ul>
 			</nav>
 
-<!--First Section-->
-
-			<div class="firstSection row border-bottom border-dark" id="Introduction">
-				<div class="col d-flex align-items-center">
-					<div class="text containter">
-						<h1>Berlin's online marketplace for second-hand bicycles.</h1>
-						<br>
-						<p>WeBike is the first easy, fair, and fun to use pre-owned bike marketplace. No stolen bikes, no scam, just great deals from individuals certified by bikeshops.</p>
-					</div>
-				</div>
-				<div class="col d-flex align-items-center justify-content-end">
-					<img class="h-100" src="images/berlin.svg" alt="Biker in Berlin">
+ 			<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+				    	<div class="modal-header text-center">
+				        	<h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+				        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				         		<span aria-hidden="true">&times;</span>
+				        	</button>
+				    	</div>
+				    	<div class="modal-body mx-3">
+				        	<div class="md-form mb-5">
+				         		<i class="fas fa-envelope prefix grey-text"></i>
+				        		<input type="email" id="defaultForm-email" class="form-control validate">
+				        		<label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+				        	</div>
+					        	<div class="md-form mb-4">
+				          		<i class="fas fa-lock prefix grey-text"></i>
+				          		<input type="password" id="defaultForm-pass" class="form-control validate">
+				          		<label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
+				        	</div>
+				      	</div>
+				    	<div class="modal-footer d-flex justify-content-center">
+				    		<button class="btn btn-default">Login</button>
+				    	</div>
+				    </div>
 				</div>
 			</div>
 
-<!--Second Section-->
+<!--Introduction-->
 
-			<div class="secondSection row border-bottom border-dark" id="Mission">
+			<div class="row" id="Introduction">
+				<div class="col d-flex align-items-center">
+					<div class="text containter">
+						<h1>The online marketplace for second-hand bikes</h1>
+						<br><br>
+						<p><span>&#10003;</span> Find the bicycle of your dreams from hundreds of options</p>
+						<p><span>&#10003;</span> Our bicycles are certified by our local Partner Bike Shops</p>
+						<p><span>&#10003;</span> Our prices are fair and are checked by our own algorithm</p>
+						<br><br>
+						<form class="form-inline" id="SearchBar">
+  							<span>&#x1F50D;</span><input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Where are you looking for a bicycle ?" aria-label="Search">
+						</form>
+					</div>
+				</div>
+				<div class="col d-flex align-items-center justify-content-end">
+					<img height="475" src="images/berlin.svg" alt="Biker in Berlin">
+				</div>
+			</div>
+
+<!--Our Mission-->
+
+			<div class="row" id="Mission">
+				<div class="text container">
+					<h3 class="text-center">Restoring trust and desire for second-hand bikes</h3>
+					<br><br>
+					<p class="text-center">Our marketplace connects individuals online to buy and sell second-hand bikes. We partner with local bike shops to certify each and every bike and to ensure you get the best experience both on and off the road.</p>
+				</div>
+			</div>
+
+<!--Our Added Value-->
+
+			<div class="row border" id="AddedValue">
 				<div class="col">
 					<div class="row">
 						<div class="text container mb-3">
@@ -106,9 +161,28 @@
 				</div>
 			</div>
 
-<!--Third Section-->
+<!--CTA-->
 
-			<div class="thirdSection row border-bottom border-dark" id="Selling">
+			<div class="row d-flex align-items-center mb-3" id="CTA">
+				<div class="col">
+					<div class="row">
+						<div class="col">
+							<h3 class="text-center">Don't forget to subscribe to our newsletter</h3>
+							<br>
+							<p class="text-center">We'll send you our latest arrivals straight to your inbox so you won't miss your dream second-hand bicycle</p>
+							<br>
+						</div>
+					</div>
+					<div class="row d-flex justify-content-center">
+						<input type="text" name="Mail" placeholder="Enter your email">
+        				<button type="button" name="button" class="btn">Subscribe</button>
+					</div>
+				</div>
+			</div>
+
+<!--Selling Journey-->
+
+			<div class="row" id="Selling">
 				<div class="col">
 					<div class="row">
 						<div class="text container mb-3">
@@ -121,7 +195,7 @@
 								<img class="card-img-top" src="images/sell-1.svg" alt="Card image cap">
 								<div class="card-body">
 									<h5 class="card-title">1. List it</h5>
-									<p class="card-text">Post your bicycle’s photos and info on the platform, run the price estimator, validate the offered price, and you’re all set!</p>
+									<p class="card-text">List it online and answer some questions to estimate its price</p>
 									<a href="#">Learn more</a>
 								</div>
 							</div>
@@ -131,7 +205,7 @@
 								<img class="card-img-top" src="images/sell-2.svg" alt="Card image cap">
 								<div class="card-body">
 									<h5 class="card-title">2. Drop it</h5>
-									<p class="card-text">Drop your bicycle at the designated bike shop near your place.</p>
+									<p class="card-text">Locate a partner bike shop and drop it off for certification</p>
 									<a href="#">Learn more</a>
 								</div>
 							</div>
@@ -141,21 +215,21 @@
 								<img class="card-img-top" src="images/sell-3.svg" alt="Card image cap">
 								<div class="card-body">
 									<h5 class="card-title">3. It's payday!</h5>
-									<p class="card-text">Once the bicycle has been reviewed by the expert, you receive your cash within 3 business days.</p>
+									<p class="card-text">Confirm sale and receive your money on your online account</p>
 									<a href="#">Learn more</a>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="row d-flex justify-content-center mb-3">
-						<button type="button" class="btn btn-outline-primary">Start selling</button>
+					<div class="row d-flex justify-content-center">
+						<button type="button" class="btn" id="Sell">Start selling</button>
 					</div>
 				</div>
 			</div>
 
-<!--Fourth Section-->
+<!--Buying Journey-->
 
-			<div class="fourthSection row" id="Buying">
+			<div class="row" id="Buying">
 				<div class="col">
 					<div class="row">
 						<div class="text container mb-3">
@@ -168,7 +242,7 @@
 								<img class="card-img-top" src="images/buy-1.svg" alt="Card image cap">
 								<div class="card-body">
 									<h5 class="card-title">1. Find it</h5>
-									<p class="card-text">Go on our website to look for a bicycle that matches all your criteria: price, type of usage, style and more!</p>
+									<p class="card-text">Filter our bikes and select one that fits your needs and style</p>
 									<a href="#">Learn more</a>
 								</div>
 							</div>
@@ -178,7 +252,7 @@
 								<img class="card-img-top" src="images/buy-2.svg" alt="Card image cap">
 								<div class="card-body">
 									<h5 class="card-title">2. Buy it</h5>
-									<p class="card-text">Once you’ve found your dream bicycle, pay it online by card or paypal through our secured payment system. You have a 5 days payback guarantee in case the bicycle does not satisfy you.</p>
+									<p class="card-text">Pay it with your favourite mode of payment online</p>
 									<a href="#">Learn more</a>
 								</div>
 							</div>
@@ -188,59 +262,112 @@
 								<img class="card-img-top" src="images/buy-3.svg" alt="Card image cap">
 								<div class="card-body">
 									<h5 class="card-title">3. Collect it</h5>
-									<p class="card-text">You now have to collect your bicycle at the designated bike shop. Enjoy your ride!</p>
+									<p class="card-text">Collect it at the indicated partner bike shop and enjoy the ride !</p>
 									<a href="#">Learn more</a>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="row d-flex justify-content-center mb-3">
-						<button type="button" class="btn btn-outline-primary">Start shopping</button>
+					<div class="row d-flex justify-content-center">
+						<button type="button" class="btn" id="Buy">Start shopping</button>
 					</div>
 				</div>
 			</div>
 
-		</div>
+<!--Testimonial-->
+
+			<div class="row" id="Testimonial">
+				<div class="text container">
+					<h3 class="text-center">"WeBike helped me find the vintage bike of my dreams that I could never find. The bike was relatively cheap and in great condition."</h3>
+					<br>
+					<h5 class="text-center">Anna Thomas</h5>
+					<p class="text-center">Happy Second-Hand Bike Owner</p>
+				</div>
+			</div>
+
+<!--Our Team-->
+
+			<div id="Team">
+				<div class="col">
+					<div class="row">
+						<div class="text container mb-4">
+							<h2>Our Team</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="row" id="ourTeam">
+						<div class="col text-center">
+							<img class="mb-3" width="100" src="images/team-1.svg">
+							<h5>Cassien</h5>
+							<p>The Finance Guy</p>
+						</div>
+						<div class="col text-center">
+							<img class="mb-3" width="100" src="images/team-2.svg">
+							<h5>Hippolyte</h5>
+							<p>The Operations Guy</p>
+						</div>
+						<div class="col text-center">
+							<img class="mb-3" width="100" src="images/team-3.svg">
+							<h5>Théo</h5>
+							<p>The Experience Guy</p>
+						</div>
+						<div class="col text-center">
+							<img class="mb-3" width="100" src="images/team-4.svg">
+							<h5>Wei</h5>
+							<p>The Marketing Guy</p>
+						</div>
+						<div class="col text-center">
+							<img class="mb-3" width="135" src="images/team-5.svg">	
+							<h5>You ?</h5>
+							<p>Pick your role or email us</p>
+						</div>
+					</div>
+					<div class="row d-flex justify-content-center">
+						<a type="button" class="btn" id="Contact" href="mailto:theo.garreau@googlemail.com">Contact us</a>
+					</div>
+				</div>
+			</div>
 
 <!--Footer-->
 
-		<div class="footerSection row" id="Footer">
-			<div class="col">
-			</div>
-			<div class="col pt-3">
-				<img class="navlogo mb-3" src="images/logo.jpg" height="50" alt="Logo">	
-				<p>Terms and Conditions</p>
-				<p>© WeBike GmbH, 2020</p>
-			</div>
-			<div class="col">
-			</div>
-			<div class="col pt-3">
-				<h5>About Us</h5>
-				<p>Blog</p>
-				<p>Press</p>
-				<p>Infoboard</p>
-			</div>
-			<div class="col pt-3">
-				<h5>Buying & Selling</h5>
-				<p>How WeBike works</p>
-				<p>Buy a bicycle</p>
-				<p>Sell a bicycle</p>
-			</div>
-			<div class="col pt-3">
-				<h5>For Bike shops</h5>
-				<p>Partners Portal</p>
-				<p>Register to certify</p>
-				<p>Register to repair</p>
-			</div>
-			<div class="col pt-3">
-				<h5>Help</h5>
-				<p>Payments & Payouts</p>
-				<p>Shipping</p>
-				<p>Trust and Safety</p>
-			</div>
-			<div class="col">
+			<div class="footerSection row" id="Footer">
+				<div class="col">
+				</div>
+				<div class="col pt-3">
+					<img class="navlogo mb-3" src="images/logo-3.png" height="50" alt="Logo">	
+					<p>Terms and Conditions</p>
+					<p>© WeBike GmbH, 2020</p>
+				</div>
+				<div class="col">
+				</div>
+				<div class="col pt-3">
+					<h5>About Us</h5>
+					<p>Blog</p>
+					<p>Press</p>
+					<p>Infoboard</p>
+				</div>
+				<div class="col pt-3">
+					<h5>Buying/Selling</h5>
+					<p>How WeBike works</p>
+					<p>Buy a bicycle</p>
+					<p>Sell a bicycle</p>
+				</div>
+				<div class="col pt-3">
+					<h5>Bike Shops</h5>
+					<p>Partners Portal</p>
+					<p>Register to certify</p>
+					<p>Register to repair</p>
+				</div>
+				<div class="col pt-3">
+					<h5>Help</h5>
+					<p>Payments & Payouts</p>
+					<p>Shipping</p>
+					<p>Trust and Safety</p>
+				</div>
+				<div class="col">
+				</div>
 			</div>
 		</div>
-
 	</body>
 </html>

@@ -1,33 +1,136 @@
+h1, h2, h3, h4, h5, h6, p, a {
+	font-family: 'Playfair Display', serif;
+}
+
+p{
+	font-size: 15px;
+}
+
+h1{
+	font-size: 50px;
+}
+
+h2{
+	font-size: 40px;
+}
+
+h3{
+	font-size: 35px;
+}
+
+#Navbar{
+	padding-right: 25px;
+	padding-left: 25px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+#Login{
+	color: #23e08b;
+}
+
+#SignUp{
+	color: white;
+	background-color: #23e08b;
+}
+
 #Introduction{
-	height: 500px;
-	margin-top: 0px;
-	margin-bottom: 0px;
+	padding-right: 150px;
+	padding-left: 150px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 #Mission{
-	margin-top: 50px;
-	margin-bottom: 50px;
+	padding-right: 150px;
+	padding-left: 150px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	color: white;
+	background-color: #23e08b;
+}
+
+#Mission p{
+	font-size: 20px;
+}
+
+#AddedValue{
+	padding-right: 150px;
+	padding-left: 150px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#CTA{
+	padding-right: 150px;
+	padding-left: 150px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	color: white;
+	background-color: #23e08b;
+}
+
+#CTA p{
+	font-size: 20px;
 }
 
 #Selling{
-	margin-top: 50px;
+	padding-right: 150px;
+	padding-left: 150px;
+	padding-top: 50px;
 	padding-bottom: 50px;
 }
 
+#Sell{
+	color: white;
+	background-color: #23e08b;
+	margin-top: 17.5px;
+}
+
+
 #Buying{
-	margin-top: 50px;
+	padding-right: 150px;
+	padding-left: 150px;
+	padding-top: 50px;
 	padding-bottom: 50px;
+}
+
+#Buy{
+	color: white;
+	background-color: #23e08b;
+	margin-top: 17.5px;
+}
+
+
+#Testimonial{
+	color: white;
+	background-color: #23e08b;
+	padding-right: 150px;
+	padding-left: 150px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#Team{
+	padding-right: 150px;
+	padding-left: 150px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#Contact{
+	color: white;
+	background-color: #23e08b;
+	margin-top: 17.5px;
 }
 
 #Footer{
-	background-color: #407BFF;
-	height: 200px;
+	background-color: #23e08b;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	color: white;
 }
 
-#Footer h5{
-	color: white;
-}
 #Footer p{
 	font-size: 12.5px;
-	color: white;
 }
